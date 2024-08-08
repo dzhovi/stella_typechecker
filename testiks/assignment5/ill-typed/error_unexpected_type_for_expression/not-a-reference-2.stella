@@ -1,0 +1,11 @@
+language core;
+
+extend with
+  #unit-types,
+  #references,
+  #let-bindings,
+  #sequencing;
+
+fn main(n : Nat) -> Nat {
+  return let ref = new(0) in **ref
+}
